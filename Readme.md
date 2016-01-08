@@ -1,12 +1,11 @@
-<snippet>
-  <content><![CDATA[
- ${1:Project Name}
+# Vending Machine CLS
 
-TODO: Write a project description
+This is just a simple vending machine application that is intended for CLS. It takes in two files, stock.dat 
+(this is what is available in the vending machine) and coins.dat (the available coins the vending machine has).
 
 ## Installation
 
-TODO: Describe the installation process
+Extract the zip file to any desired folder and make sure the vm, stock.dat and coin.dat are in the same folder.
 
 ## Usage
 
@@ -31,6 +30,3 @@ TODO: Write credits
 ## License
 
 TODO: Write license
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
