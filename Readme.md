@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-# ${1:Vending Machine <CLS>}
+# ${1:Vending Machine CLS}
 This is just a simple vending machine application that is intended for CLS. It takes in two files, stock.dat 
 (this is what is available in the vending machine) and coins.dat (the available coins the vending machine has).
 ## Installation
