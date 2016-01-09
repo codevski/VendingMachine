@@ -9,7 +9,7 @@ Extract the zip file to any desired folder and make sure the vm, stock.dat and c
 
 ## Usage
 
-TODO: Write usage instructions
+./vm stock.dat coins.dat
 
 ## Contributing
 
@@ -25,8 +25,9 @@ TODO: Write history
 
 ## Credits
 
-TODO: Write credits
+Startup Code: Paul Miller
+Amended: Saso Petrovski
 
 ## License
 
-TODO: Write license
+The MIT License (MIT)
