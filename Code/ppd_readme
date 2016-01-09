@@ -1,0 +1,76 @@
+/***********************************************************************
+ * COSC1076 - Advanced Programming Techniques
+ * Semester 2 2015 Assignment #2 
+ * Full Name        : Saso Petrovski
+ * Student Number   : S3435996
+ * Course Code      : COSC1076
+ * Program Code     : BP096
+ * Start up code provided by Paul Miller
+ **********************************************************************/
+ 
+ /* This file is for you to provide any extra information that your 
+ markers may find useful. For example. Bugs, inconsistencies, incomplete
+ functionality, reasoning for design choices etc. */
+ 
+			         __    __  ___ _____    __  ___                       
+			 /\   /\/__\/\ \ \/   \\_   \/\ \ \/ _ \                      
+			 \ \ / /_\ /  \/ / /\ / / /\/  \/ / /_\/                      
+			  \ V //__/ /\  / /_//\/ /_/ /\  / /_\\                       
+			   \_/\__/\_\ \/___,'\____/\_\ \/\____/                       
+			                                                              
+			           _      ___        _____    __  __         _   ___  
+			  /\/\    /_\    / __\ /\  /\\_   \/\ \ \/__\ __   _/ | / _ \ 
+			 /    \  //_\\  / /   / /_/ / / /\/  \/ /_\   \ \ / / || | | |
+			/ /\/\ \/  _  \/ /___/ __  /\/ /_/ /\  //__    \ V /| || |_| |
+			\/    \/\_/ \_/\____/\/ /_/\____/\_\ \/\__/     \_/ |_(_)___/
+
+ Design Choice
+ 	- Vending Machine only accepts maximum of 30 different items. (Natural to 
+ 	have limited space)
+ 	
+ 	- When reading in the stock file it will ignore empty lines. Some OS's may
+ 	create empty lines which the Vending Machine can handle. When writing back 
+ 	the to the file the Vending Machine will rectify that problem and remove
+ 	them.
+ 	
+ 	- All stock must begin with an "I". Any stock that does not start with an "I"
+ 	will be considered an error and vending machine will need a service.
+ 	
+ 	- Coin file can only accept 8 unique lines (empty lines are ignored) that
+ 	match the Vending Machines enum. Any duplicates or missing coins will be 
+ 	regarded as invalid. Even if coins have run out the coin file save the hand
+ 	as 0. This should indicate to the system admin that the coins need to be 
+ 	restocked.
+ 	
+ 	- The machine can only accept a maximum of 10 coins per transaction. 
+ 	If user exceeds this limit the transaction is cancelled and money is 
+ 	returned to the user.
+ 	
+ 	- When adding a new item, It will find the next available item ID. For 
+ 	Example If I0002 was removed it will make sure it will find that ID and 
+ 	use it. With this setup in place it will be impossible to render an ID 
+ 	redundant.
+ 	
+ 	- Add item: When inputing a price, It only accepts correct format DD.CC also
+ 	the cents needs to be of modular of 5.
+ 	
+ 	- If there is not enough money in the vending machine to return change
+ 	the transaction will be canceled and a refund will be offered.
+ 	
+Summary
+	- While reading over my code I discovered ways that I could have improved 
+	it, especially during the validation period. It became apparent that if 
+	there was an efficient planning process in place from the beginning I could 
+	have utilised more generic functions that would have shortened my code.
+ 	
+Future functionality
+	- Implementation of a notification system. When reaching to 95% stock level to
+	notify the administrator that they are running low on space and should not
+	add more items to the Vending Machine.
+	
+	- The implementation of a feature in which the administrator would be 
+	notified when stock or coin levels reach 5% would be an integral part of 
+	the success of the vending machine.	
+	
+ 	
+ 
