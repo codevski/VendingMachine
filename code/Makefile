@@ -1,12 +1,3 @@
-########################################################################
-# COSC1076 - Advanced Programming Techniques
-# Semester 2 2014 Assignment #2
-# Full Name        : Saso Petrovski
-# Student Number   : S3435996
-# Course Code      : COSC1076
-# Program Code     : BP096
-# Start up code provided by Paul Miller
-########################################################################
 CFLAGS = -ansi -Wall -pedantic -g
 CC = gcc
 SOURCES=ppd_main.c ppd_menu.c ppd_options.c ppd_utility.c ppd_stock.c \
