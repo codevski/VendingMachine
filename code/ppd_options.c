@@ -1,14 +1,3 @@
-/***********************************************************************
- * COSC1076 - Advanced Programming Techniques
- * Semester 2 2015 Assignment #2
- * Full Name        : Saso Petrovski
- * Student Number   : S3435996
- * Course Code      : COSC1076
- * Program Code     : BP096
- * Start up code provided by Paul Miller
- * Some codes are adopted here with permission by an anonymous author
- ***********************************************************************/
-
 #include "ppd_options.h"
 
 /**
