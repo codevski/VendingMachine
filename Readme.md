@@ -26,7 +26,8 @@ TODO: Write history
 ## Credits
 
 Startup Code: Paul Miller
-Amended: Saso Petrovski
+
+Amended: Sash Petrovski
 
 ## License
 
